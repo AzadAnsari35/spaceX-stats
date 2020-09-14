@@ -6,5 +6,6 @@ export const truncateString = (str, num) => {
 };
 
 export const getDate = (date) => {
+  if (!date) return date;
   return date.split("T")[0];
 };

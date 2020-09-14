@@ -1,9 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
-  rootLink: {
-    textDecoration: "none",
-  },
   root: {
     background: "rgba(237, 194, 123, 0.40)",
     boxShadow:
@@ -12,15 +9,14 @@ export const useStyles = makeStyles((theme) => ({
     padding: 30,
     cursor: "pointer",
     minHeight: 110,
-    color: "black",
-    "& *": { textDecoration: "none" },
     "&:hover": {
       background: "rgba(237, 194, 123, 0.60)",
       transition: " all 0.3s ease-in-out",
     },
+    position: "relative",
   },
   title: {
-    fontSize: 24,
+    fontSize: 30,
     paddingBottom: 20,
   },
 
@@ -58,5 +54,14 @@ export const useStyles = makeStyles((theme) => ({
     "& a:last-child img": {
       width: 18,
     },
+  },
+  payload: {
+    marginTop: 20,
+    fontSize: 14,
+  },
+  close: {
+    position: "absolute",
+    top: 20,
+    right: 20,
   },
 }));
